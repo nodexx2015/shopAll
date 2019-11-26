@@ -398,6 +398,7 @@ header {
     .section-cards__card-features {
         padding: 22px 0px 35px;
     }
+
     .section-cards__text {
         padding: 34px 15px;
     }
@@ -408,16 +409,19 @@ header {
         font-size: 30px;
         margin: 15px 0;
     }
+
     .section-cards__text {
         font-size: 15px;
         padding: 20px 15px;
     }
 }
+
 @media all and (max-width:450px) {
     .section-cards__title {
         font-size: 20px;
         margin: 0;
     }
+
     .section-cards__text {
         font-size: 11px;
         padding: 12px 15px;
@@ -427,8 +431,10 @@ header {
 
 /*               Section-Join              */
 .section-join {
-    max-width: 706px;
+    max-width: 726px;
     margin: 58px auto 125px;
+    padding: 0px 10px;
+    text-align: center;
 }
 
 .section-join__title {
@@ -459,6 +465,7 @@ header {
     padding-left: 36px;
     border: none;
     box-sizing: border-box;
+    margin-right: 5px;
 }
 
 .section-join__email input::placeholder {
@@ -475,6 +482,52 @@ header {
     line-height: 30px;
     text-transform: uppercase;
     border: none;
+}
+
+@media all and (max-width:750px) {
+    .section-join__text {
+        font-size: 15px;
+        max-width: 616px;
+        display: inline-block;
+    }
+}
+
+@media all and (max-width:560px) {
+    .section-join {
+        margin: 29px auto 62px;
+    }
+
+    .section-join__text {
+        font-size: 12px;
+        padding: 15px 0px 41px;
+    }
+
+    .section-join__title {
+        font-size: 30px;
+    }
+
+    .section-join__email input {
+        width: 340px;
+        height: 26px;
+        padding-left: 28px;
+    }
+
+    .section-join__email button {
+        width: 100px;
+        height: 25px;
+        font-size: 12px;
+        line-height: 23px;
+    }
+}
+@media all and (max-width:440px) {
+    .section-join__title {
+        font-size: 24px;
+    }
+    .section-join__text {
+        font-size: 10px;
+        line-height: 24px;
+        padding: 8px 0px 27px;
+    }
 }
 
 /*                        FOOTER                  */
@@ -554,6 +607,12 @@ footer {
 
 .footer-row__contact span {
     word-spacing: normal;
+}
+@media all and (max-width:1140px) {
+    .footer-row,
+.footer-aside {
+    margin: 0px 10px;
+}
 }
 
 /*         footer-aside            */
