@@ -709,3 +709,34 @@ footer {
     opacity: 1;
     color: #ded4fd;
 }
+@media all and (max-width:940px) {
+    .footer-aside {
+        flex-wrap: wrap-reverse;
+        margin-top: 70px;
+    }
+    .footer-aside__nav {
+        order: 1;
+        min-width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .footer-aside__nav>ul {
+        margin: 0px auto;
+    }
+    }
+    @media all and (max-width:505px) {
+        .footer-aside__nav>ul {
+            width: 300px;
+            font-size: 12px;
+        }
+        .footer-aside__copy {
+            font-size: 12px;
+        }
+        .footer-aside__socials>ul {
+            width: 100px;
+    font-size: 12px;
+        }
+        .footer-aside__copy>span {
+            letter-spacing: 0;
+        }
+    }
