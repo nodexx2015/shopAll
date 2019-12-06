@@ -747,3 +747,144 @@ footer {
         letter-spacing: 0;
     }
 }
+
+/* ----------------------------PAGE----------------------------- */
+
+.page-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin: 89px 0px 24px;
+}
+
+.page-title+h3 {
+    text-align: center;
+}
+
+.page-title+h3 a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.products-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 33px;
+}
+
+.wrap-products {
+    margin: 60px auto;
+    max-width: 1106px;
+}
+
+.img-products,
+.img-people {
+    float: left;
+}
+
+.img-people {
+    margin: 0 22px 23px 8px;
+}
+
+.wrap-img+p {
+    float: left;
+    margin: 0 0 45px;
+    max-width: 376px;
+}
+
+.wrap-products p {
+    opacity: 0.6;
+}
+
+@media all and (max-width:1120px) {
+    .wrap-img+p {
+        float: none;
+    }
+
+    .wrap-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-products,
+    .img-people,
+    .wrap-img+p {
+        float: none;
+    }
+
+    .img-people {
+        margin: 0 0 23px 18px;
+    }
+
+    .wrap-img+p {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .wrap-products {
+        max-width: 900px;
+        padding: 0px 10%;
+    }
+
+    .img-products img,
+    .img-people img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+@media all and (max-width:900px) {
+    .products-title, .page-title {
+        font-size: 30px;
+    }
+    .page-title+h3 a {
+        font-size: 10px;
+    }
+    .wrap-products p {
+        font-size: 15px;
+    }
+}
+@media all and (max-width:560px) {
+    .wrap-products {
+        margin: 30px auto;
+    }
+    .wrap-products p {
+        font-size: 12px;
+    }
+    .products-title, .page-title {
+        font-size: 20px;
+    }
+    .page-title {
+        margin: 45px 0px 12px;
+    }
+}
+@media all and (max-width:440px) {
+    .wrap-products {
+        margin: 15px auto;
+    }
+    .img-people {
+        margin: 0 0 0 10px;
+    }
+    .products-title, .page-title {
+        font-size: 16px;
+    }
+    .products-title {
+        margin-bottom: 15px;
+    }
+    .page-title {
+        margin: 22px 0px 0px;
+    }
+    .page-title+h3 {
+        margin: 10px 0;
+    }
+    .page-title+h3 a {
+        font-size: 8px;
+    }
+    .wrap-img {
+        margin-bottom: 10px;
+    }
+    .wrap-products+.section-join>.section-join__title {
+        font-size: 16px;
+    }
+}
