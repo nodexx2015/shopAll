@@ -313,13 +313,17 @@ header {
     font-weight: 700;
     line-height: 24px;
     text-align: center;
+    margin: 17px 0 34px;
+}
+.section-cards__title_spacing {
+    margin-bottom: 74px;
 }
 
 .section-cards__text {
     font-size: 19px;
     line-height: 24px;
     text-align: center;
-    padding: 34px 0;
+    margin-bottom: 34px;
 }
 
 .section-cards__images {
@@ -405,7 +409,7 @@ header {
     }
 
     .section-cards__text {
-        padding: 34px 15px;
+        padding: 0 15px;
     }
 }
 
@@ -417,7 +421,7 @@ header {
 
     .section-cards__text {
         font-size: 15px;
-        padding: 20px 15px;
+        margin-bottom: 20px;
     }
 }
 
@@ -426,10 +430,13 @@ header {
         font-size: 20px;
         margin: 0;
     }
+    .section-cards__title_spacing {
+        margin-bottom: 15px;
+    }
 
     .section-cards__text {
         font-size: 11px;
-        padding: 12px 15px;
+        margin-bottom: 12px;
         line-height: 15px;
     }
 }
