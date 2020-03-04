@@ -14,7 +14,7 @@ h2 {
 /* HEADER */
 header {
     background-color: #f3f4f9;
-    padding: 62px 0px;
+    padding-bottom: 62px;
 }
 
 .wrap {
@@ -22,15 +22,24 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 30px 0 20px;
 }
 
 .logo a {
     font-size: 13px;
+    color: #000000;
     text-decoration: none;
 }
 
 .menu {
     font-size: 16px;
+    display: flex;
+}
+
+.menu>input,
+label>.fa-bars,
+label>.fa-times {
+    display: none;
 }
 
 .menu-items {
@@ -40,12 +49,21 @@ header {
     list-style: none;
 }
 
-.menu-items__item {
+.menu-items__item,
+.menu-items__basket {
     margin-left: 53px;
+}
+
+.menu-items__basket>a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .menu-items__item a {
     text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    width: 100%;
 }
 
 .banner {
@@ -152,16 +170,73 @@ header {
 }
 
 @media all and (max-width:768px) {
+    header {
+        padding-bottom: 30px;
+    }
+
+    .menu-items {
+        display: block;
+        position: absolute;
+        top: 53px;
+        right: 0;
+        height: 0;
+        width: 100vw;
+        text-align: center;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        z-index: 1;
+    }
+
+    .menu-items__item {
+        margin: 0;
+    }
+
+    .menu-items__item>a {
+        padding: 5px 0;
+        background-color: rgba(189, 186, 186, 0.5);
+    }
+
+    .menu-items__item>a:hover {
+        color: white;
+        background-color: rgba(141, 139, 137, 0.5);
+        transition: all 0.5s ease;
+    }
+
+    label {
+        display: inline-block;
+        border-radius: 3px;
+        order: 1;
+        margin-left: 53px;
+        padding-top: 2px;
+        cursor: pointer;
+        width: 20px;
+        text-align: center;
+        background-color: rgb(167, 161, 150);
+    }
+
+    label>.fa-bars {
+        display: inline-block;
+    }
+
+    #bar:checked+label>.menu-items {
+        height: 200px;
+        transition: all 0.5s ease;
+    }
+
+    #bar:checked+label>.fa-bars {
+        display: none;
+    }
+
+    #bar:checked+label>.fa-times {
+        display: inline-block;
+    }
+
     .banner-text__info a {
         margin-top: 0px;
     }
 
     .banner-text__info {
         line-height: 30px;
-    }
-
-    header {
-        padding: 40px 0px;
     }
 
     .banner {
@@ -315,6 +390,7 @@ header {
     text-align: center;
     margin: 17px 0 34px;
 }
+
 .section-cards__title_spacing {
     margin-bottom: 74px;
 }
@@ -430,6 +506,7 @@ header {
         font-size: 20px;
         margin: 0;
     }
+
     .section-cards__title_spacing {
         margin-bottom: 15px;
     }
@@ -827,12 +904,12 @@ footer {
     }
 
     .img-people {
-        margin: 0 0 23px 18px;
+        margin: 0 0 0 18px;
     }
 
     .wrap-img+p {
         max-width: 100%;
-        margin: auto;
+        margin: 23px auto 0;
     }
 
     .wrap-products {
@@ -1047,6 +1124,7 @@ footer {
     margin: 0px auto;
     padding: 79px 20px 0px 20px;
 }
+
 .contacts-text {
     padding-top: 30px;
     max-width: 110px;
@@ -1054,15 +1132,17 @@ footer {
     font-weight: 700;
     margin-right: 30px;
 }
-.contacts-text h3{
+
+.contacts-text h3 {
     font-size: 10px;
 }
 
-.contacts-text p{
+.contacts-text p {
     font-size: 12px;
     text-transform: uppercase;
 }
-.contacts-img img{
+
+.contacts-img img {
     max-width: 100%;
 }
 
