@@ -466,18 +466,12 @@ label>.fa-times {
     .section-cards {
         padding: 0px 5px;
     }
-}
-
-@media all and (max-width:1090px) {
     .section-cards__images {
-        max-width: 755px;
+        justify-content: center;
     }
 }
 
 @media all and (max-width:748px) {
-    .section-cards__images {
-        justify-content: center;
-    }
     .section-cards__card-btn {
         opacity: 1;
         position: static;
